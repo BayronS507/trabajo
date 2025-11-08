@@ -1,0 +1,146 @@
+/* === Estilo en general === */
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at top left, #000000 60%, #050505 100%);
+  color: #00fff7;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* === Encabezado y pie === */
+header, footer {
+  background: linear-gradient(90deg, #00fff7, #8a00ff);
+  color: #000;
+  padding: 15px;
+  text-shadow: 0 0 10px #00fff7;
+  box-shadow: 0 0 15px #8a00ff;
+}
+
+header h1, footer p {
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* === Index pricipal === */
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.menu a {
+  background: #0a0a0a;
+  border: 2px solid #00fff7;
+  color: #00fff7;
+  margin: 10px;
+  padding: 15px 30px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #00fff7;
+}
+
+.menu a:hover {
+  background: #00fff7;
+  color: #000;
+  box-shadow: 0 0 30px #00fff7, 0 0 60px #8a00ff;
+  transform: scale(1.05);
+}
+
+/* === Exclusivamente para la "Página de operaciones" === */
+main {
+  margin-top: 40px;
+}
+
+.operacion {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* === Exclusivamente para el "Inputs" === */
+input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 2px solid #00fff7;
+  background: #0a0a0a;
+  color: #00fff7;
+  width: 180px;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  box-shadow: 0 0 15px #00fff7;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #8a00ff;
+  box-shadow: 0 0 25px #8a00ff;
+}
+
+/* === Es para los botones en general === */
+button {
+  background: #000;
+  color: #00fff7;
+  border: 2px solid #00fff7;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #00fff7;
+}
+
+button:hover {
+  background: #00fff7;
+  color: #000;
+  box-shadow: 0 0 30px #00fff7, 0 0 60px #8a00ff;
+  transform: scale(1.05);
+}
+
+/* === Es para donde da el resultado === */
+p {
+  font-size: 1.3em;
+  color: #fff;
+  text-shadow: 0 0 10px #00fff7;
+}
+
+#resultado {
+  color: #00ff88;
+  font-weight: bold;
+  text-shadow: 0 0 20px #00ff88;
+}
+
+/* === exclusivamente para el boton "volver al menu"*/
+.volver {
+  display: inline-block;
+  margin-top: 25px;
+  color: #8a00ff;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 15px #8a00ff;
+  transition: 0.3s;
+}
+
+.volver:hover {
+  color: #00fff7;
+  text-shadow: 0 0 25px #00fff7;
+  transform: scale(1.1);
+}
